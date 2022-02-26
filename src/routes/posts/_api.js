@@ -1,6 +1,6 @@
-export async function api(request, resource, data) {
+export async function api(e, resource, data) {
 	const res = await fetch(`https://jsonplaceholder.typicode.com/${resource}`, {
-		method: request.method,
+		method: e.request.method,
 		headers: {
 			'content-type': 'application/json',
 		},
